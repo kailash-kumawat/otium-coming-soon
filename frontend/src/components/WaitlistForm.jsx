@@ -19,6 +19,7 @@ export default function WaitlistForm() {
     setStatus("loading");
 
     const endpoint = import.meta.env.VITE_WAITLIST_ENDPOINT;
+    console.log("endpoint", endpoint);
 
     try {
       if (endpoint) {
@@ -27,9 +28,9 @@ export default function WaitlistForm() {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email: value }),
         });
-
+        console.log("response", response);
         const data = await response.json();
-
+        console.log("data", data);
         if (!response.ok) {
           setStatus("error");
           setMessage(data.message || "Something went wrong. Please try again.");
