@@ -16,9 +16,13 @@ OTIUM is preparing for launch. This landing page introduces the brand and gives 
 
 ## Tech Stack
 
-- HTML
-- CSS
-- JavaScript
+- React — UI and component architecture
+- Vite — Development and build tooling
+- JavaScript (JSX) — Application logic
+- Tailwind CSS — Styling and responsive design
+- Express.js — Backend API
+- MongoDB Atlas — Waitlist data storage
+- nodemailer — Confirmation emails
 
 ## Getting Started
 
