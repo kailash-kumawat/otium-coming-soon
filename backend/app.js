@@ -3,9 +3,15 @@ import cors from "cors";
 
 const app = express();
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "http://192.168.29.172:5173",
+  "https://otium-coming-soon.onrender.com",
+];
+
 app.use(
   cors({
-    origin: "http://192.168.29.172:5173",
+    origin: allowedOrigins,
   }),
 );
 
