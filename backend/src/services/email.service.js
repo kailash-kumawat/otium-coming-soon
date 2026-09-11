@@ -64,8 +64,7 @@ export const sendWelcomeEmail = async (email) => {
           font-weight: 400;
           color: #4b5563;
         ">
-          Thank you for your interest in OTIUM.
-          We've saved your place and we'll let you know
+          We've saved your place, and we'll let you know
           as soon as OTIUM is ready.
         </p>
 
@@ -100,7 +99,7 @@ export const sendWelcomeEmail = async (email) => {
           text-align: center;
           margin-bottom: 28px;
         ">
-          <a
+          
             href="https://x.com/Otium_official"
             style="
               color: #6b7280;
@@ -121,7 +120,7 @@ export const sendWelcomeEmail = async (email) => {
             •
           </span>
 
-          <a
+          
             href="https://www.instagram.com/otium.leisure/"
             style="
               color: #6b7280;
