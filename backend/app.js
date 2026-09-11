@@ -27,6 +27,10 @@ app.use(express.static("public"));
 
 import waitList from "./src/routes/waitlist.route.js";
 
+app.get("/health/", (req, res) => {
+  res.status(200).send("OK");
+});
+
 app.use("/api/waitlist", waitList);
 
 export default app;
