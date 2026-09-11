@@ -7,6 +7,7 @@ const requiredEnv = [
   "RESEND_API_KEY",
   "GMAIL_APP_PASSWORD",
   "PORT",
+  "CORS_ORIGIN",
 ];
 
 for (const env of requiredEnv) {
@@ -20,4 +21,5 @@ export const config = {
   resendApiKey: process.env.RESEND_API_KEY,
   gmailAppPassword: process.env.GMAIL_APP_PASSWORD,
   port: process.env.PORT,
+  corsOrigin: process.env.CORS_ORIGIN,
 };

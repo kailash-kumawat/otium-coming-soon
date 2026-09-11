@@ -1,17 +1,12 @@
 import express from "express";
 import cors from "cors";
+import { config } from "./src/config/env.config.js";
 
 const app = express();
 
-const allowedOrigins = [
-  "http://localhost:5173",
-  "http://192.168.29.172:5173",
-  "https://otium-coming-soon.onrender.com",
-];
-
 app.use(
   cors({
-    origin: allowedOrigins,
+    origin: config.corsOrigin,
   }),
 );
 
