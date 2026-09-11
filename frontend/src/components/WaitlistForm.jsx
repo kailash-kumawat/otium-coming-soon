@@ -41,9 +41,8 @@ export default function WaitlistForm() {
       } else {
         // Static/demo fallback. Replace with your API endpoint for production.
         await new Promise((resolve) => setTimeout(resolve, 450));
-        localStorage.setItem("otium_waitlist_email", value);
-        setStatus("success");
-        setMessage("You'll be notified when OTIUM is ready.");
+        setStatus("error");
+        setMessage("Something went wrong. Please try again.");
       }
 
       setEmail("");
