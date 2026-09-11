@@ -99,7 +99,7 @@ export const sendWelcomeEmail = async (email) => {
           text-align: center;
           margin-bottom: 28px;
         ">
-          
+          <a
             href="https://x.com/Otium_official"
             style="
               color: #6b7280;
@@ -120,7 +120,7 @@ export const sendWelcomeEmail = async (email) => {
             •
           </span>
 
-          
+          <a
             href="https://www.instagram.com/otium.leisure/"
             style="
               color: #6b7280;
